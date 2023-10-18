@@ -129,7 +129,7 @@ import {
 } from "@remix-run/react";
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-BKT7XJRC.css";
+var tailwind_default = "/build/_assets/tailwind-2O7KGW26.css";
 
 // app/root.tsx
 import { Fragment, jsxDEV as jsxDEV2 } from "react/jsx-dev-runtime";
@@ -149,14 +149,24 @@ function App() {
         lineNumber: 24,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ jsxDEV2(Meta, {}, void 0, !1, {
+      /* @__PURE__ */ jsxDEV2("link", { rel: "apple-touch-icon", href: "./images/logo.png" }, void 0, !1, {
         fileName: "app/root.tsx",
         lineNumber: 25,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ jsxDEV2(Links, {}, void 0, !1, {
+      /* @__PURE__ */ jsxDEV2("link", { rel: "manifest", href: "./manifest.json" }, void 0, !1, {
         fileName: "app/root.tsx",
         lineNumber: 26,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV2(Meta, {}, void 0, !1, {
+        fileName: "app/root.tsx",
+        lineNumber: 27,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV2(Links, {}, void 0, !1, {
+        fileName: "app/root.tsx",
+        lineNumber: 28,
         columnNumber: 9
       }, this)
     ] }, void 0, !0, {
@@ -167,31 +177,31 @@ function App() {
     /* @__PURE__ */ jsxDEV2("body", { children: /* @__PURE__ */ jsxDEV2(Layout, { children: [
       /* @__PURE__ */ jsxDEV2(Outlet, {}, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 30,
+        lineNumber: 32,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ jsxDEV2(ScrollRestoration, {}, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 31,
+        lineNumber: 33,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ jsxDEV2(Scripts, {}, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 32,
+        lineNumber: 34,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ jsxDEV2(LiveReload, {}, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 33,
+        lineNumber: 35,
         columnNumber: 11
       }, this)
     ] }, void 0, !0, {
       fileName: "app/root.tsx",
-      lineNumber: 29,
+      lineNumber: 31,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/root.tsx",
-      lineNumber: 28,
+      lineNumber: 30,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
@@ -206,26 +216,26 @@ function Layout({ children }) {
       "Movie",
       /* @__PURE__ */ jsxDEV2("span", { className: "text-teal-500", children: "DB" }, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 45,
+        lineNumber: 47,
         columnNumber: 16
       }, this)
     ] }, void 0, !0, {
       fileName: "app/root.tsx",
-      lineNumber: 44,
+      lineNumber: 46,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/root.tsx",
-      lineNumber: 43,
+      lineNumber: 45,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV2("main", { children }, void 0, !1, {
       fileName: "app/root.tsx",
-      lineNumber: 48,
+      lineNumber: 50,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/root.tsx",
-    lineNumber: 42,
+    lineNumber: 44,
     columnNumber: 5
   }, this);
 }
@@ -531,76 +541,86 @@ function Index() {
       lineNumber: 32,
       columnNumber: 9
     }, this),
-    /* @__PURE__ */ jsxDEV5("div", { className: "grid gap=4 sm:grid-cols-2 md:gap-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-8", children: data.results.map((movie) => /* @__PURE__ */ jsxDEV5("div", { className: "flex flex-col overflow-hidden rounded-lg border bg-white", children: [
-      /* @__PURE__ */ jsxDEV5(
-        Link3,
-        {
-          prefetch: "intent",
-          className: "group relative block h-48 overflow-hidden bg-gray-100 md:h-64",
-          to: `movie/${movie.id}/comments`,
-          children: /* @__PURE__ */ jsxDEV5(
-            "img",
+    /* @__PURE__ */ jsxDEV5("div", { className: "grid gap=4 sm:grid-cols-2 md:gap-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-8", children: data.results.map((movie, index) => /* @__PURE__ */ jsxDEV5(
+      "div",
+      {
+        className: "flex flex-col overflow-hidden rounded-lg border bg-white",
+        children: [
+          /* @__PURE__ */ jsxDEV5(
+            Link3,
             {
-              src: `https://image.tmdb.org/t/p/w500/${movie.poster_path}`,
-              alt: "",
-              className: "absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+              prefetch: "intent",
+              className: "group relative block h-48 overflow-hidden bg-gray-100 md:h-64",
+              to: `movie/${movie.id}/comments`,
+              children: /* @__PURE__ */ jsxDEV5(
+                "img",
+                {
+                  src: `https://image.tmdb.org/t/p/w500/${movie.poster_path}`,
+                  alt: "",
+                  className: "absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+                },
+                void 0,
+                !1,
+                {
+                  fileName: "app/routes/_index.tsx",
+                  lineNumber: 49,
+                  columnNumber: 19
+                },
+                this
+              )
             },
             void 0,
             !1,
             {
               fileName: "app/routes/_index.tsx",
-              lineNumber: 46,
-              columnNumber: 19
+              lineNumber: 44,
+              columnNumber: 17
             },
             this
-          )
-        },
-        void 0,
-        !1,
-        {
-          fileName: "app/routes/_index.tsx",
-          lineNumber: 41,
-          columnNumber: 17
-        },
-        this
-      ),
-      /* @__PURE__ */ jsxDEV5("div", { className: "flex flex-1 flex-col p-4 sm:p-6", children: [
-        /* @__PURE__ */ jsxDEV5("h2", { className: "mb-2 text-lg font-semi-bold text-gray-800", children: /* @__PURE__ */ jsxDEV5(
-          Link3,
-          {
-            to: `movie/${movie.id}/comments`,
-            prefetch: "intent",
-            className: "transition duration-100 hover:text-indigo-500 active:text-indigo-600",
-            children: movie.title
-          },
-          void 0,
-          !1,
-          {
+          ),
+          /* @__PURE__ */ jsxDEV5("div", { className: "flex flex-1 flex-col p-4 sm:p-6", children: [
+            /* @__PURE__ */ jsxDEV5("h2", { className: "mb-2 text-lg font-semi-bold text-gray-800", children: /* @__PURE__ */ jsxDEV5(
+              Link3,
+              {
+                to: `movie/${movie.id}/comments`,
+                prefetch: "intent",
+                className: "transition duration-100 hover:text-indigo-500 active:text-indigo-600",
+                children: movie.title
+              },
+              void 0,
+              !1,
+              {
+                fileName: "app/routes/_index.tsx",
+                lineNumber: 57,
+                columnNumber: 21
+              },
+              this
+            ) }, void 0, !1, {
+              fileName: "app/routes/_index.tsx",
+              lineNumber: 56,
+              columnNumber: 19
+            }, this),
+            /* @__PURE__ */ jsxDEV5("p", { className: "text-gray-500 line-clamp-3", children: movie.overview }, void 0, !1, {
+              fileName: "app/routes/_index.tsx",
+              lineNumber: 65,
+              columnNumber: 19
+            }, this)
+          ] }, void 0, !0, {
             fileName: "app/routes/_index.tsx",
-            lineNumber: 54,
-            columnNumber: 21
-          },
-          this
-        ) }, void 0, !1, {
-          fileName: "app/routes/_index.tsx",
-          lineNumber: 53,
-          columnNumber: 19
-        }, this),
-        /* @__PURE__ */ jsxDEV5("p", { className: "text-gray-500 line-clamp-3", children: movie.overview }, void 0, !1, {
-          fileName: "app/routes/_index.tsx",
-          lineNumber: 62,
-          columnNumber: 19
-        }, this)
-      ] }, void 0, !0, {
+            lineNumber: 55,
+            columnNumber: 17
+          }, this)
+        ]
+      },
+      index,
+      !0,
+      {
         fileName: "app/routes/_index.tsx",
-        lineNumber: 52,
-        columnNumber: 17
-      }, this)
-    ] }, void 0, !0, {
-      fileName: "app/routes/_index.tsx",
-      lineNumber: 40,
-      columnNumber: 15
-    }, this)) }, void 0, !1, {
+        lineNumber: 40,
+        columnNumber: 15
+      },
+      this
+    )) }, void 0, !1, {
       fileName: "app/routes/_index.tsx",
       lineNumber: 37,
       columnNumber: 9
@@ -617,7 +637,7 @@ function Index() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-2PYKFVI5.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-IVRL7GG2.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-TUYN66RV.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-PHSB2HCX.js", imports: void 0, hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-DC776EXK.js", imports: ["/build/_shared/chunk-G7CHZRZX.js"], hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "routes/movie.$id": { id: "routes/movie.$id", parentId: "root", path: "movie/:id", index: void 0, caseSensitive: void 0, module: "/build/routes/movie.$id-DN6TRW65.js", imports: ["/build/_shared/chunk-G7CHZRZX.js"], hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "routes/movie.$id.comments": { id: "routes/movie.$id.comments", parentId: "routes/movie.$id", path: "comments", index: void 0, caseSensitive: void 0, module: "/build/routes/movie.$id.comments-35VBVUH3.js", imports: void 0, hasAction: !0, hasLoader: !0, hasErrorBoundary: !1 } }, version: "fe75e2d6", hmr: { runtime: "/build/_shared/chunk-TUYN66RV.js", timestamp: 1696779497976 }, url: "/build/manifest-FE75E2D6.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-YPKV75S6.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-IVRL7GG2.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-TUYN66RV.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-U3CI7LC3.js", imports: void 0, hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-SXPWG6Q7.js", imports: ["/build/_shared/chunk-G7CHZRZX.js"], hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "routes/movie.$id": { id: "routes/movie.$id", parentId: "root", path: "movie/:id", index: void 0, caseSensitive: void 0, module: "/build/routes/movie.$id-YPQT4RIE.js", imports: ["/build/_shared/chunk-G7CHZRZX.js"], hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "routes/movie.$id.comments": { id: "routes/movie.$id.comments", parentId: "routes/movie.$id", path: "comments", index: void 0, caseSensitive: void 0, module: "/build/routes/movie.$id.comments-35VBVUH3.js", imports: void 0, hasAction: !0, hasLoader: !0, hasErrorBoundary: !1 } }, version: "9358952e", hmr: { runtime: "/build/_shared/chunk-TUYN66RV.js", timestamp: 1697644446606 }, url: "/build/manifest-9358952E.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var mode = "development", assetsBuildDirectory = "public/build", future = {}, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
